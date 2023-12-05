@@ -22,7 +22,7 @@ function contarEspacios(texto) {
 }
 
 function contarPuntos(texto) {
-    var punto = /./;
+    var punto = /\./g;
     var matches = texto.match(punto); // retorna un array con todas las coincidencias, es decir, con todos los puntos.
     return matches ? matches.length : 0; 
 }
